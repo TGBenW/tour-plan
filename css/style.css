@@ -15,4 +15,13 @@
   font-stretch: normal;
   unicode-range: U+0020-2044;
 }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli-regular', sans-serif;
+}
 /*# sourceMappingURL=style.css.map */
