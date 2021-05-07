@@ -54,8 +54,11 @@
     border: none
     background-color: $primary
     cursor: pointer
+    transition: 0.2s
     &:hover
       background-color: darken($primary, 7%)
+    &:active
+      background-color: lighten($primary, 7%)
 .user
   display: flex
   align-items: center
