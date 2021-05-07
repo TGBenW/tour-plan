@@ -470,6 +470,7 @@ template {
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  border-radius: 0;
 }
 
 .search__button:hover {
@@ -478,6 +479,12 @@ template {
 
 .search__button:active {
   background-color: #ef4061;
+}
+
+.search__icon {
+  height: 16px;
+  width: 16px;
+  fill: #FFFFFF;
 }
 
 .user {
@@ -544,7 +551,6 @@ template {
 .hotel-name {
   font-size: 24px;
   line-height: 30px;
-  margin: 0;
   text-transform: uppercase;
   font-family: "Muli-bold", sans-serif;
 }
@@ -593,6 +599,11 @@ template {
 .hotel-description {
   font-size: 12px;
   line-height: 15px;
+}
+
+.star {
+  width: 8px;
+  height: 8px;
 }
 
 .offer {
@@ -726,6 +737,12 @@ template {
 @media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 280px;
   }
 }
 /*# sourceMappingURL=style.css.map */
