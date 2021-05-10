@@ -638,6 +638,12 @@ template {
   line-height: 18px;
 }
 
+.rating__counter::after {
+  content: attr(data-end);
+  font-size: 10px;
+  line-height: 13px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
