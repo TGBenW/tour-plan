@@ -473,14 +473,6 @@ template {
   border-radius: 0;
 }
 
-.search__button:hover {
-  background-color: #d51237;
-}
-
-.search__button:active {
-  background-color: #ef4061;
-}
-
 .search__icon {
   height: 16px;
   width: 16px;
@@ -537,10 +529,6 @@ template {
 .breadcrumb-list__link {
   text-decoration: none;
   color: inherit;
-}
-
-.breadcrumb-list__link:hover {
-  text-decoration: underline;
 }
 
 .hotel {
@@ -838,10 +826,6 @@ template {
   margin-left: 8px;
 }
 
-.booking__num:hover {
-  text-decoration: underline;
-}
-
 .booking__button {
   width: 100%;
   min-height: 45px;
@@ -855,14 +839,6 @@ template {
   cursor: pointer;
 }
 
-.booking__button:hover {
-  background-color: #d51237;
-}
-
-.booking__button:active {
-  background-color: #ef4061;
-}
-
 .map {
   width: 347px;
   height: 213px;
@@ -871,6 +847,18 @@ template {
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+}
+
+@media (min-width: 992px) {
+  .breadcrumb-list__link:hover, .booking__num:hover {
+    text-decoration: underline;
+  }
+  .search__button:hover, .booking__button:hover {
+    background-color: #d51237;
+  }
+  .search__button:active, .booking__button:active {
+    background-color: #ef4061;
   }
 }
 

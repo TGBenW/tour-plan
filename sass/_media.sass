@@ -1,6 +1,15 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+@media (min-width: 992px)
+  .breadcrumb-list__link, .booking__num
+    &:hover
+      text-decoration: underline
+  .search__button, .booking__button
+    &:hover
+      background-color: darken($primary, 7%)
+    &:active
+      background-color: lighten($primary, 7%)
 @media (max-width: 992px)
   .container
     max-width: 700px
