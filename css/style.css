@@ -856,15 +856,13 @@ iframe {
   height: 100%;
 }
 
-.newsletter {
+.newsletter-parallax {
   position: relative;
   padding: 98px 0 87px 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  height: 100%;
 }
 
-.newsletter:before {
+.newsletter-parallax:before {
   content: '';
   position: absolute;
   top: 0;
