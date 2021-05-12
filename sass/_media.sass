@@ -11,7 +11,8 @@
 @media (min-width: 992px)
   .breadcrumb-list__link,
   .booking__num,
-  .navbar-menu__link
+  .navbar-menu__link,
+  .user__name
     &:hover
       text-decoration: underline
   .search__button,
@@ -21,6 +22,11 @@
       background-color: darken($primary, 7%)
     &:active
       background-color: lighten($primary, 7%)
+  .user__avatar
+    transition: 0.5s
+    &:hover
+      transform: scale(1.1)
+
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper

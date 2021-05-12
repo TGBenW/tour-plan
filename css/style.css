@@ -847,6 +847,8 @@ template {
   height: 213px;
   border-radius: 10px;
   overflow: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
 }
 
 iframe {
@@ -1106,7 +1108,8 @@ iframe {
 @media (min-width: 992px) {
   .breadcrumb-list__link:hover,
   .booking__num:hover,
-  .navbar-menu__link:hover {
+  .navbar-menu__link:hover,
+  .user__name:hover {
     text-decoration: underline;
   }
   .search__button:hover,
@@ -1118,6 +1121,14 @@ iframe {
   .booking__button:active,
   .subscribe__button:active {
     background-color: #ef4061;
+  }
+  .user__avatar {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .user__avatar:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 
