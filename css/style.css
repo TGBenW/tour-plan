@@ -889,6 +889,7 @@ iframe {
 }
 
 .newsletter-title {
+  max-width: 242px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -932,10 +933,10 @@ iframe {
 
 .subscribe__button {
   position: absolute;
-  min-width: 65px;
+  padding: 20px 18px;
+  width: 65px;
   right: 0;
   top: 0;
-  height: 100%;
   border: none;
   background-color: #EC1F46;
   color: #FFFFFF;
@@ -961,13 +962,19 @@ iframe {
 }
 
 @media (min-width: 992px) {
-  .breadcrumb-list__link:hover, .booking__num:hover {
+  .breadcrumb-list__link:hover,
+  .booking__num:hover,
+  .navbar-menu__link:hover {
     text-decoration: underline;
   }
-  .search__button:hover, .booking__button:hover, .subscribe__button:hover {
+  .search__button:hover,
+  .booking__button:hover,
+  .subscribe__button:hover {
     background-color: #d51237;
   }
-  .search__button:active, .booking__button:active, .subscribe__button:active {
+  .search__button:active,
+  .booking__button:active,
+  .subscribe__button:active {
     background-color: #ef4061;
   }
 }

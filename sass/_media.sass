@@ -10,10 +10,14 @@
         height: 100%
         object-fit: cover
 @media (min-width: 992px)
-  .breadcrumb-list__link, .booking__num
+  .breadcrumb-list__link,
+  .booking__num,
+  .navbar-menu__link
     &:hover
       text-decoration: underline
-  .search__button, .booking__button, .subscribe__button
+  .search__button,
+  .booking__button,
+  .subscribe__button
     &:hover
       background-color: darken($primary, 7%)
     &:active
@@ -55,7 +59,9 @@
     max-width: 576px
     width: 92%
   .navbar
-    &__search, &-menu, &__user
+    &__search,
+    &-menu,
+    &__user
       display: none
   .menu
     &-button
