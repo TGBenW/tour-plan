@@ -856,6 +856,297 @@ iframe {
   height: 100%;
 }
 
+.packages {
+  padding: 40px 0 70px 0;
+}
+
+.packages__title {
+  margin: 0 0 65px 0;
+  font-family: "Muli-bold", sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.packages__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.packages__wrapper-large {
+  -ms-grid-column: span 2;
+      grid-column-start: span 2;
+}
+
+.deaxl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0 0;
+      -ms-flex-positive: 0 0;
+          flex-grow: 0 0;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.deaxl__image {
+  width: 366px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.deaxl-right {
+  width: 364px;
+  height: 500px;
+  padding: 45px 20px 30px 45px;
+  color: #FFFFFF;
+  fill: #FFFFFF;
+  background-color: #0A223D;
+}
+
+.deaxl__rating {
+  margin-bottom: 5px;
+}
+
+.deaxl__title {
+  margin: 0 0 27px 0;
+  font-family: "Muli-bold", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.deaxl__description {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 160.6%;
+  margin-bottom: 34px;
+  max-width: 300px;
+}
+
+.deaxl__address, .deaxl__guests {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 11px;
+}
+
+.deaxl__rooms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 37px;
+}
+
+.deaxl__icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 14px;
+}
+
+.deaxl__text {
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.deaxl__sale {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.deaxl__price {
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.deaxl__primary {
+  font-family: "Muli-bold", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.deaxl__button {
+  padding: 10px 25px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+}
+
+.deaxl__flash {
+  padding: 8px 12px;
+  font-family: "Muli-bold", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 0px 4px 4px 0px;
+  position: absolute;
+  left: 0;
+  top: 26px;
+}
+
+.deal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #0A223D;
+  color: #FFFFFF;
+  fill: #FFFFFF;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.deal__image {
+  width: 350px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.deal-bottom {
+  padding: 30px 20px 30px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 350px;
+  height: 250px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.deal__title {
+  font-family: "Muli-bold", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 0 0 23px 0;
+}
+
+.deal__address, .deal__guests, .deal__rooms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.deal__address:not(:last-child), .deal__guests:not(:last-child), .deal__rooms:not(:last-child) {
+  margin-bottom: 11px;
+}
+
+.deal__icon {
+  width: 14px;
+  height: 14px;
+}
+
+.deal__text {
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  margin-left: 14px;
+}
+
+.deal__sale {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  margin-top: 24px;
+  margin-bottom: 5px;
+}
+
+.deal__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.deal__primary {
+  font-family: "Muli-bold", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.deal__button {
+  padding: 10px 25px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+}
+
+.deal__flash {
+  padding: 4px 9px;
+  font-family: "Muli-bold", sans-serif;
+  font-style: normal;
+  font-size: 8px;
+  line-height: 10px;
+  color: #FFFFFF;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 0px 4px 4px 0px;
+  position: absolute;
+  left: 0;
+  top: 26px;
+}
+
 .newsletter-parallax {
   position: relative;
   padding: 98px 0 87px 0;
@@ -1192,6 +1483,13 @@ iframe {
     width: 230px;
     height: 250px;
   }
+  .deaxl-right {
+    padding-top: 20px;
+  }
+  .deal-bottom {
+    width: 300px;
+    padding-top: 15px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1204,13 +1502,17 @@ iframe {
   .search__button:hover,
   .booking__button:hover,
   .subscribe__button:hover,
-  .card__button:hover {
+  .card__button:hover,
+  .deaxl__button:hover,
+  .deal__button:hover {
     background-color: #d51237;
   }
   .search__button:active,
   .booking__button:active,
   .subscribe__button:active,
-  .card__button:active {
+  .card__button:active,
+  .deaxl__button:active,
+  .deal__button:active {
     background-color: #ef4061;
   }
   .user__avatar {
@@ -1284,6 +1586,27 @@ iframe {
   .card {
     width: 340px;
     height: 255px;
+  }
+  .packages {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  .packages__title {
+    margin-bottom: 55px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .packages__wrapper {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  .deaxl-right {
+    padding-top: 45px;
+  }
+  .deal-bottom {
+    padding-top: 20px;
   }
 }
 
@@ -1420,6 +1743,44 @@ iframe {
     width: 49%;
     height: 255px;
   }
+  .packages__wrapper {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: auto 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    grid-column-gap: 0;
+  }
+  .packages__wrapper-large {
+    -ms-grid-column: span 1;
+        grid-column-start: span 1;
+  }
+  .deaxl {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .deaxl__image {
+    width: 100%;
+    height: 250px;
+  }
+  .deaxl-right {
+    width: 100%;
+    height: auto;
+    padding-left: 20px;
+  }
+  .deal__image {
+    width: 100%;
+    height: 250px;
+  }
+  .deal-bottom {
+    width: 100%;
+  }
+  .deal__flash {
+    padding: 8px 12px;
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1447,6 +1808,29 @@ iframe {
   }
   .card {
     width: 100%;
+  }
+  .packages {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .packages__title {
+    margin-bottom: 35px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .deaxl-right {
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+  .deaxl__flash {
+    padding: 4px 9px;
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .deal__flash {
+    padding: 4px 9px;
+    font-size: 8px;
+    line-height: 10px;
   }
 }
 

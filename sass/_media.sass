@@ -11,6 +11,13 @@
   .card
     width: 230px
     height: 250px
+  .deaxl
+    &-right
+      padding-top: 20px
+  .deal
+    &-bottom
+      width: 300px
+      padding-top: 15px
 @media (min-width: 992px)
   .breadcrumb-list__link,
   .booking__num,
@@ -21,7 +28,9 @@
   .search__button,
   .booking__button,
   .subscribe__button,
-  .card__button
+  .card__button,
+  .deaxl__button,
+  .deal__button
     &:hover
       background-color: darken($primary, 7%)
     &:active
@@ -75,6 +84,22 @@
   .card
     width: 340px
     height: 255px
+  .packages
+    padding-top: 30px
+    padding-bottom: 60px
+    &__title
+      margin-bottom: 55px
+      font-size: 30px
+      line-height: 36px
+    &__wrapper
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(3, 1fr)
+  .deaxl
+    &-right
+      padding-top: 45px
+  .deal
+    &-bottom
+      padding-top: 20px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -165,6 +190,32 @@
   .card
     width: 49%
     height: 255px
+  .packages
+    &__wrapper
+      grid-template-columns: 100%
+      grid-template-rows: auto 1fr 1fr 1fr 1fr
+      grid-column-gap: 0
+      &-large
+        grid-column-start: span 1
+  .deaxl
+    flex-direction: column
+    &__image
+      width: 100%
+      height: 250px
+    &-right
+      width: 100%
+      height: auto
+      padding-left: 20px
+  .deal
+    &__image
+      width: 100%
+      height: 250px
+    &-bottom
+      width: 100%
+    &__flash
+      padding: 8px 12px
+      font-size: 12px
+      line-height: 15px
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -185,6 +236,26 @@
       line-height: 30px
   .card
     width: 100%
+  .packages
+    padding-top: 20px
+    padding-bottom: 20px
+    &__title
+      margin-bottom: 35px
+      font-size: 20px
+      line-height: 24px
+  .deaxl
+    &-right
+      padding-top: 15px
+      padding-bottom: 20px
+    &__flash
+      padding: 4px 9px
+      font-size: 8px
+      line-height: 10px
+  .deal
+    &__flash
+      padding: 4px 9px
+      font-size: 8px
+      line-height: 10px
 @media (max-width: 320px)
   .container
     max-width: 280px
