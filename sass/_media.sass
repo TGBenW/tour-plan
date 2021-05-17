@@ -18,11 +18,19 @@
     &-bottom
       width: 300px
       padding-top: 15px
+  .footer
+    &-wrapper
+      margin-bottom: 70px
+    &__input
+      flex-basis: 100%
+    &__payments
+      margin-left: 200px
 @media (min-width: 992px)
   .breadcrumb-list__link,
   .booking__num,
   .navbar-menu__link,
-  .user__name
+  .user__name,
+  .footer__link
     &:hover
       text-decoration: underline
   .search__button,
@@ -30,7 +38,8 @@
   .subscribe__button,
   .card__button,
   .deaxl__button,
-  .deal__button
+  .deal__button,
+  .footer__button
     &:hover
       background-color: darken($primary, 7%)
     &:active
@@ -39,7 +48,6 @@
     transition: 0.5s
     &:hover
       transform: scale(1.1)
-
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -63,7 +71,7 @@
     &-grid
       flex-direction: column
     &__slider
-      margin-bottom: 30px
+      margin-bottom: 20px
     &-right
       flex-direction: row
     &-slider
@@ -100,6 +108,41 @@
   .deal
     &-bottom
       padding-top: 20px
+  .footer
+    padding-top: 73px
+    padding-bottom: 33px
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+      margin-bottom: 56px
+    &__logo
+      grid-row: 1 / 2
+      grid-column: span 2
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__legal
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__contact
+      &-details
+        grid-column: span 5
+        grid-row: 3
+      &-form
+        grid-column: span 5
+        grid-row: 4
+    &__input
+      flex-basis: 49%
+    &__info
+      justify-content: space-between
+    &__payments
+      margin: 0
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -187,6 +230,8 @@
     padding-bottom: 60px
     &__title
       margin-bottom: 36px
+    &__card
+      margin-bottom: 12px
   .card
     width: 49%
     height: 255px
@@ -216,6 +261,14 @@
       padding: 8px 12px
       font-size: 12px
       line-height: 15px
+  .footer
+    &__contact
+      &-details
+        grid-column: span 6
+      &-form
+        grid-column: span 6
+    &__item
+      font-size: 12px
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -256,6 +309,59 @@
       padding: 4px 9px
       font-size: 8px
       line-height: 10px
+  .footer
+    padding-top: 69px
+    padding-bottom: 21px
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-row-gap: 30px
+      margin-bottom: 30px
+    &__logo
+      width: 104px
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+        flex-wrap: wrap
+    &__title
+      &--inline
+        flex-basis: 100%
+        margin-bottom: 20px
+    &__item
+      font-size: 14px
+      &--small
+        font-size: 12px
+        &:not(:first-child)
+          margin-left: 10px
+      &--mb-2
+        font-size: 12px
+    &__additional
+      grid-row: 3
+      grid-column: 1
+    &__categories
+      grid-row: 4
+      grid-column: 1
+    &__legal
+      grid-row: 5
+      grid-column: 1px
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
+    &__text
+      font-size: 12px
+    &__input
+      flex-basis: 100%
+    &__info
+      flex-wrap: wrap
+    &__list
+      flex-basis: 100%
+      margin-bottom: 10px
 @media (max-width: 320px)
   .container
     max-width: 280px
@@ -276,3 +382,11 @@
       line-height: 23px
       max-width: 245px
       margin: 0 auto 42px auto
+  .footer
+    &__message
+      margin-bottom: 15px
+    &__button
+      order: 2
+    &__required
+      flex-basis: 100%
+      margin-bottom: 15px

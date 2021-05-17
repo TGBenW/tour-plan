@@ -1607,7 +1607,7 @@ iframe {
   line-height: 160%;
 }
 
-.footer__item--mb-2 {
+.footer__item--mb-2:not(:last-child) {
   margin-bottom: 20px;
 }
 
@@ -1616,11 +1616,24 @@ iframe {
   font-style: normal;
   font-size: 12px;
   line-height: 15px;
+}
+
+.footer__item--small:not(:first-child) {
   margin-left: 13px;
 }
 
 .footer__icon-wrapper {
   min-width: 40px;
+}
+
+.footer__phones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer__link {
@@ -1640,7 +1653,7 @@ iframe {
 }
 
 .footer__message {
-  max-height: 123px;
+  min-height: 123px;
   background-color: #FFFFFF;
   border-radius: 4px;
   padding: 18px 23px;
@@ -1713,13 +1726,24 @@ iframe {
     width: 300px;
     padding-top: 15px;
   }
+  .footer-wrapper {
+    margin-bottom: 70px;
+  }
+  .footer__input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .footer__payments {
+    margin-left: 200px;
+  }
 }
 
 @media (min-width: 992px) {
   .breadcrumb-list__link:hover,
   .booking__num:hover,
   .navbar-menu__link:hover,
-  .user__name:hover {
+  .user__name:hover,
+  .footer__link:hover {
     text-decoration: underline;
   }
   .search__button:hover,
@@ -1727,7 +1751,8 @@ iframe {
   .subscribe__button:hover,
   .card__button:hover,
   .deaxl__button:hover,
-  .deal__button:hover {
+  .deal__button:hover,
+  .footer__button:hover {
     background-color: #d51237;
   }
   .search__button:active,
@@ -1735,7 +1760,8 @@ iframe {
   .subscribe__button:active,
   .card__button:active,
   .deaxl__button:active,
-  .deal__button:active {
+  .deal__button:active,
+  .footer__button:active {
     background-color: #ef4061;
   }
   .user__avatar {
@@ -1779,7 +1805,7 @@ iframe {
             flex-direction: column;
   }
   .hotel__slider {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .hotel-right {
     -webkit-box-orient: horizontal;
@@ -1830,6 +1856,65 @@ iframe {
   }
   .deal-bottom {
     padding-top: 20px;
+  }
+  .footer {
+    padding-top: 73px;
+    padding-bottom: 33px;
+  }
+  .footer-wrapper {
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+    grid-row-gap: 40px;
+    margin-bottom: 56px;
+  }
+  .footer__logo {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    grid-column: span 2;
+  }
+  .footer__social-network {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    grid-column: span 4;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .footer__categories {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    grid-column: span 2;
+  }
+  .footer__legal {
+    grid-column: span 2;
+  }
+  .footer__additional {
+    grid-column: span 2;
+  }
+  .footer__contact-details {
+    grid-column: span 5;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .footer__contact-form {
+    grid-column: span 5;
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+  .footer__input {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+  }
+  .footer__info {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__payments {
+    margin: 0;
   }
 }
 
@@ -1962,6 +2047,9 @@ iframe {
   .activities__title {
     margin-bottom: 36px;
   }
+  .activities__card {
+    margin-bottom: 12px;
+  }
   .card {
     width: 49%;
     height: 255px;
@@ -2003,6 +2091,15 @@ iframe {
     padding: 8px 12px;
     font-size: 12px;
     line-height: 15px;
+  }
+  .footer__contact-details {
+    grid-column: span 6;
+  }
+  .footer__contact-form {
+    grid-column: span 6;
+  }
+  .footer__item {
+    font-size: 12px;
   }
 }
 
@@ -2055,6 +2152,94 @@ iframe {
     font-size: 8px;
     line-height: 10px;
   }
+  .footer {
+    padding-top: 69px;
+    padding-bottom: 21px;
+  }
+  .footer-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+    margin-bottom: 30px;
+  }
+  .footer__logo {
+    width: 104px;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .footer__social-network {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__title--inline {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  .footer__item {
+    font-size: 14px;
+  }
+  .footer__item--small {
+    font-size: 12px;
+  }
+  .footer__item--small:not(:first-child) {
+    margin-left: 10px;
+  }
+  .footer__item--mb-2 {
+    font-size: 12px;
+  }
+  .footer__additional {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .footer__categories {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .footer__legal {
+    -ms-grid-row: 5;
+    grid-row: 5;
+    -ms-grid-column: 1;
+    grid-column: 1px;
+  }
+  .footer__contact-details {
+    -ms-grid-row: 6;
+    grid-row: 6;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .footer__contact-form {
+    -ms-grid-row: 7;
+    grid-row: 7;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .footer__text {
+    font-size: 12px;
+  }
+  .footer__input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .footer__info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__list {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -2080,6 +2265,19 @@ iframe {
     line-height: 23px;
     max-width: 245px;
     margin: 0 auto 42px auto;
+  }
+  .footer__message {
+    margin-bottom: 15px;
+  }
+  .footer__button {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .footer__required {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
