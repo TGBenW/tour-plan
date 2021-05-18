@@ -14,15 +14,15 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body>
-    <header class="navbar">
+  <body id="body">
+    <header class="navbar navbar--mobile_fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
             <img src="img/horizontal-logo.svg" alt="logo: Best Tour Plan" class="logo__image" />
           </a>
 
-          <form action="#" class="search navbar__search">
+          <form action="#" class="search navbar__search navbar__search--mobile--hidden">
             <input type="text" class="search__input" placeholder="Search Location" />
             <button class="search__button">
               <svg class="search__icon">
@@ -31,7 +31,7 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user">
+          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
             <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar" />
             <span class="user__name">Nathan</span>
           </a>
@@ -47,7 +47,27 @@
       <div class="navbar-bottom">
         <nav class="container">
           <ul class="navbar-menu">
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <a href="#" class="user navbar__user navbar__user--mobile--visible">
+                <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar" />
+                <span class="user__name user__name--light">Nathan</span>
+              </a>
+            </li>
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <form action="#" class="search navbar__search navbar__search--mobile--visible">
+                <input
+                  type="text"
+                  class="search__input search__input--mobile"
+                  placeholder="Search Location"
+                />
+                <button class="search__button">
+                  <svg class="search__icon">
+                    <use href="img/icons.svg#search"></use>
+                  </svg>
+                </button>
+              </form>
+            </li>
+            <li class="navbar-menu__item navbar-menu__item--first">
               <a href="#" class="navbar-menu__link">All Deals</a>
             </li>
             <li class="navbar-menu__item">
