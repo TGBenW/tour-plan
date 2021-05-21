@@ -2432,6 +2432,23 @@ iframe {
   }
 }
 
+@media (max-height: 570px) {
+  .navbar-bottom {
+    top: 68px;
+    padding-top: 0;
+  }
+  .navbar-menu__item {
+    margin-bottom: 5px;
+  }
+  .navbar-menu__item--first {
+    margin-top: 5px;
+  }
+  .user__name--light {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 320px) {
   .container {
     max-width: 280px;
