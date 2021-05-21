@@ -43,6 +43,7 @@ $(document).ready(function () {
     var modalDialog = $(".modal__dialog");
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
+    //document.addEventListener("keydown", escapeHandler);
   }
   function closeModal(event) {
     event.preventDefault();
@@ -51,4 +52,13 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+
+  $(document).on("keydown", function (event) {
+    if (event.keyCode == 27) {
+      closeModal(event); // Do Something
+    }
+  });
+
+  var modalOverlay = $(".modal__overlay");
+  modalOverlay.on("click", closeModal);
 });
