@@ -151,19 +151,39 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide hotel-slider__item">
-                <img src="img/slide1.png" alt="slide photo" class="hotel-slider__image" />
+                <picture class="hotel-slider__image">
+                  <source type="image/webp" srcset="img/slide1.webp" class="hotel-slider__image" />
+                  <source type="image/png" srcset="img/slide1.png" class="hotel-slider__image" />
+                  <img src="img/slide1.png" alt="slide photo" class="hotel-slider__image" />
+                </picture>
               </div>
               <div class="swiper-slide hotel-slider__item">
-                <img src="img/slide2.jpg" alt="slide photo" class="hotel-slider__image" />
+                <picture class="hotel-slider__image">
+                  <source type="image/webp" srcset="img/slide2.webp" class="hotel-slider__image" />
+                  <source type="image/jpeg" srcset="img/slide2.jpg" class="hotel-slider__image" />
+                  <img src="img/slide2.jpg" alt="slide photo" class="hotel-slider__image" />
+                </picture>
               </div>
               <div class="swiper-slide hotel-slider__item">
-                <img src="img/slide3.jpg" alt="slide photo" class="hotel-slider__image" />
+                <picture class="hotel-slider__image">
+                  <source type="image/webp" srcset="img/slide3.webp" class="hotel-slider__image" />
+                  <source type="image/jpeg" srcset="img/slide3.jpg" class="hotel-slider__image" />
+                  <img src="img/slide3.jpg" alt="slide photo" class="hotel-slider__image" />
+                </picture>
               </div>
               <div class="swiper-slide hotel-slider__item">
-                <img src="img/slide4.jpg" alt="slide photo" class="hotel-slider__image" />
+                <picture class="hotel-slider__image">
+                  <source type="image/webp" srcset="img/slide4.webp" class="hotel-slider__image" />
+                  <source type="image/jpeg" srcset="img/slide4.jpg" class="hotel-slider__image" />
+                  <img src="img/slide4.jpg" alt="slide photo" class="hotel-slider__image" />
+                </picture>
               </div>
               <div class="swiper-slide hotel-slider__item">
-                <img src="img/slide5.jpg" alt="slide photo" class="hotel-slider__image" />
+                <picture class="hotel-slider__image">
+                  <source type="image/webp" srcset="img/slide5.webp" class="hotel-slider__image" />
+                  <source type="image/jpeg" srcset="img/slide5.jpg" class="hotel-slider__image" />
+                  <img src="img/slide5.jpg" alt="slide photo" class="hotel-slider__image" />
+                </picture>
               </div>
             </div>
             <!-- If we need navigation buttons -->
@@ -247,7 +267,11 @@
         <h2 class="packages__title">Other Packages</h2>
         <div class="packages__wrapper">
           <div class="packages__wrapper-large deaxl">
-            <img src="img/package-1.jpg" alt="photo: Hotel Blue Haven" class="deaxl__image" />
+            <picture>
+              <source type="image/webp" srcset="img/package-1.webp" class="deaxl__image" />
+              <source type="image/png" srcset="img/package-1.jpg" class="deaxl__image" />
+              <img src="img/package-1.jpg" alt="photo: Hotel Blue Haven" class="deaxl__image" />
+            </picture>
             <div class="deaxl-right">
               <div class="deaxl__rating">
                 <svg class="star"><use href="img/icons.svg#star"></use></svg>
@@ -297,7 +321,11 @@
           <!-- /.packages__wrapper-large deaxl -->
 
           <div class="packages__wrapper-small deal">
-            <img src="img/package-2.jpg" alt="photo: LUX* Belle Mare" class="deal__image" />
+            <picture>
+              <source type="image/webp" srcset="img/package-2.webp" class="deal__image" />
+              <source type="image/png" srcset="img/package-2.jpg" class="deal__image" />
+              <img src="img/package-2.jpg" alt="photo: LUX* Belle Mare" class="deal__image" />
+            </picture>
             <div class="deal-bottom">
               <h3 class="deal__title">LUX* Belle Mare</h3>
               <div class="deal__address">
@@ -333,7 +361,11 @@
           </div>
           <!-- /.packages__wrapper-small deal -->
           <div class="packages__wrapper-small deal">
-            <img src="img/package-3.jpg" alt="photo: White Palace" class="deal__image" />
+            <picture>
+              <source type="image/webp" srcset="img/package-3.webp" class="deal__image" />
+              <source type="image/png" srcset="img/package-3.jpg" class="deal__image" />
+              <img src="img/package-3.jpg" alt="photo: White Palace" class="deal__image" />
+            </picture>
             <div class="deal-bottom">
               <h3 class="deal__title">White Palace</h3>
               <div class="deal__address">
@@ -369,7 +401,11 @@
           </div>
           <!-- /.packages__wrapper-small deal -->
           <div class="packages__wrapper-small deal">
-            <img src="img/package-4.jpg" alt="photo: Luxury Place" class="deal__image" />
+            <picture>
+              <source type="image/webp" srcset="img/package-4.webp" class="deal__image" />
+              <source type="image/png" srcset="img/package-4.jpg" class="deal__image" />
+              <img src="img/package-4.jpg" alt="photo: Luxury Place" class="deal__image" />
+            </picture>
             <div class="deal-bottom">
               <h3 class="deal__title">Luxury Place</h3>
               <div class="deal__address">
@@ -405,7 +441,11 @@
           </div>
           <!-- /.packages__wrapper-small deal -->
           <div class="packages__wrapper-small deal">
-            <img src="img/package-5.jpg" alt="photo: Hotel Five Star" class="deal__image" />
+            <picture>
+              <source type="image/webp" srcset="img/package-5.webp" class="deal__image" />
+              <source type="image/png" srcset="img/package-5.jpg" class="deal__image" />
+              <img src="img/package-5.jpg" alt="photo: Hotel Five Star" class="deal__image" />
+            </picture>
             <div class="deal-bottom">
               <h3 class="deal__title">Hotel Five Star</h3>
               <div class="deal__address">
@@ -450,6 +490,7 @@
       <div
         class="newsletter-parallax"
         data-parallax="scroll"
+        data-image-src="img/newsletter-bg.webp"
         data-image-src="img/newsletter-bg.jpg"
         data-ios-fix="true"
       >
@@ -483,11 +524,23 @@
             <div class="swiper-slide">
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
-                  <img
-                    src="img/reviews-avatar1.jpg"
-                    alt="photo: Megan Fox"
-                    class="reviews-slider__avatar"
-                  />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="img/reviews-avatar1.webp"
+                      class="reviews-slider__avatar"
+                    />
+                    <source
+                      type="image/png"
+                      srcset="img/reviews-avatar1.jpg"
+                      class="reviews-slider__avatar"
+                    />
+                    <img
+                      src="img/reviews-avatar1.jpg"
+                      alt="photo: Megan Fox"
+                      class="reviews-slider__avatar"
+                    />
+                  </picture>
                   <h3 class="reviews-slider__username">Megan Fox</h3>
                   <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                   <div class="reviews-slider__rating">
@@ -516,11 +569,23 @@
             <div class="swiper-slide">
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
-                  <img
-                    src="img/reviews-avatar2.jpg"
-                    alt="photo: Jesse Reyes"
-                    class="reviews-slider__avatar"
-                  />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="img/reviews-avatar2.webp"
+                      class="reviews-slider__avatar"
+                    />
+                    <source
+                      type="image/png"
+                      srcset="img/reviews-avatar2.jpg"
+                      class="reviews-slider__avatar"
+                    />
+                    <img
+                      src="img/reviews-avatar2.jpg"
+                      alt="photo: Jesse Reyes"
+                      class="reviews-slider__avatar"
+                    />
+                  </picture>
                   <h3 class="reviews-slider__username">Jesse Reyes</h3>
                   <span class="reviews-slider__date">Stayed 23 Dec, 2020</span>
                   <div class="reviews-slider__rating">
@@ -550,11 +615,23 @@
             <div class="swiper-slide">
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
-                  <img
-                    src="img/reviews-avatar3.jpg"
-                    alt="photo: James Delgado"
-                    class="reviews-slider__avatar"
-                  />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="img/reviews-avatar3.webp"
+                      class="reviews-slider__avatar"
+                    />
+                    <source
+                      type="image/png"
+                      srcset="img/reviews-avatar3.jpg"
+                      class="reviews-slider__avatar"
+                    />
+                    <img
+                      src="img/reviews-avatar3.jpg"
+                      alt="photo: James Delgado"
+                      class="reviews-slider__avatar"
+                    />
+                  </picture>
                   <h3 class="reviews-slider__username">James Delgado</h3>
                   <span class="reviews-slider__date">Stayed 3 Apr, 2018</span>
                   <div class="reviews-slider__rating">
@@ -603,41 +680,57 @@
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
           <div class="card activities__card">
-            <img
-              src="img/activity-1.jpg"
-              alt="image: The curious corner of chamarel"
-              class="card__image"
-            />
+            <picture>
+              <source type="image/webp" srcset="img/activity-1.webp" class="card__image" />
+              <source type="image/png" srcset="img/activity-1.jpg" class="card__image" />
+              <img
+                src="img/activity-1.jpg"
+                alt="photo: The curious corner of chamarel"
+                class="card__image"
+              />
+            </picture>
             <h3 class="card__title">The curious corner of chamarel</h3>
             <button class="card__button" aria-label="Book Now button">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
-            <img
-              src="img/activity-2.jpg"
-              alt="image: Gymkhana club golf course"
-              class="card__image"
-            />
+            <picture>
+              <source type="image/webp" srcset="img/activity-2.webp" class="card__image" />
+              <source type="image/png" srcset="img/activity-2.jpg" class="card__image" />
+              <img
+                src="img/activity-2.jpg"
+                alt="photo: Gymkhana club golf course"
+                class="card__image"
+              />
+            </picture>
             <h3 class="card__title">Gymkhana club golf course</h3>
             <button class="card__button" aria-label="Book Now button">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
-            <img
-              src="img/activity-3.jpg"
-              alt="image: Tamarind falls hiking trip - full day"
-              class="card__image"
-            />
+            <picture>
+              <source type="image/webp" srcset="img/activity-3.webp" class="card__image" />
+              <source type="image/png" srcset="img/activity-3.jpg" class="card__image" />
+              <img
+                src="img/activity-3.jpg"
+                alt="photo: Tamarind falls hiking trip - full day"
+                class="card__image"
+              />
+            </picture>
             <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
             <button class="card__button" aria-label="Book Now button">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
-            <img
-              src="img/activity-4.jpg"
-              alt="image: The blue marine discovery quest"
-              class="card__image"
-            />
+            <picture>
+              <source type="image/webp" srcset="img/activity-4.webp" class="card__image" />
+              <source type="image/png" srcset="img/activity-4.jpg" class="card__image" />
+              <img
+                src="img/activity-4.jpg"
+                alt="photo: The blue marine discovery quest"
+                class="card__image"
+              />
+            </picture>
             <h3 class="card__title">The blue marine discovery quest</h3>
             <button class="card__button" aria-label="Book Now button">Book Now</button>
           </div>
