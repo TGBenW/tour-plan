@@ -39,7 +39,8 @@
   .card__button,
   .deaxl__button,
   .deal__button,
-  .footer__button
+  .footer__button,
+  .modal__button
     &:hover
       background-color: darken($primary, 7%)
     &:active
@@ -143,6 +144,9 @@
       justify-content: space-between
     &__payments
       margin: 0
+  .modal
+    &__dialog
+      padding: 23px 58px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -309,6 +313,11 @@
         grid-column: span 6
     &__item
       font-size: 12px
+  .modal
+    &__dialog
+      max-width: 478px
+      width: 76%
+      padding: 23px 58px
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -406,6 +415,11 @@
     &__list
       flex-basis: 100%
       margin-bottom: 10px
+  .modal
+    &__dialog
+      max-width: 478px
+      width: 92%
+      padding: 20px 30px
 @media (max-width: 320px)
   .container
     max-width: 280px
@@ -429,6 +443,12 @@
   .footer
     &__message
       margin-bottom: 15px
+    &__button
+      order: 2
+    &__required
+      flex-basis: 100%
+      margin-bottom: 15px
+  .modal
     &__button
       order: 2
     &__required
