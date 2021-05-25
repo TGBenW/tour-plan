@@ -61,4 +61,31 @@ $(document).ready(function () {
 
   var modalOverlay = $(".modal__overlay");
   modalOverlay.on("click", closeModal);
+
+  //form validation
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Name should be at least 2 symbols long",
+        },
+        email: {
+          required: "Please enter email so we could contact you",
+          //required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "Please enter a phone number",
+          minlength: "Please use +7 (000) 000-00-00 format",
+        },
+      },
+    });
+  });
+
+  //phone field format validation
+  $(document).ready(function () {
+    $(".phone").mask("+7 (000) 000-00-00");
+  });
 });

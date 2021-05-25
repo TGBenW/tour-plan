@@ -49,14 +49,16 @@
     text-align: center
     text-transform: uppercase
   &__input
-    margin-bottom: 15px
     width: 100%
+    &:not(:first-child)
+      margin-top: 15px
   &__send
     display: flex
     align-items: center
     justify-content: space-between
   &__message
     width: 100%
+    margin-top: 15px
     margin-bottom: 15px
     min-height: 123px
   &__required
@@ -65,3 +67,5 @@
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
+  &__button
+    cursor: pointer
