@@ -78,7 +78,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Please enter a phone number",
-          minlength: "Please use +7 (000) 000-00-00 format",
+          minlength: "Enter +7 (000) 000-00-00 format",
         },
       },
     });
