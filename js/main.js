@@ -88,4 +88,7 @@ $(document).ready(function () {
   $(document).ready(function () {
     $(".phone").mask("+7 (000) 000-00-00");
   });
+
+  //AOS initialization
+  AOS.init();
 });

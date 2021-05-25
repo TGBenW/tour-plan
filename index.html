@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -22,11 +23,16 @@
     <header class="navbar navbar--mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="#" class="logo" data-aos="fade-right">
             <img src="img/horizontal-logo.svg" alt="logo: Best Tour Plan" class="logo__image" />
           </a>
 
-          <form action="#" class="search navbar__search navbar__search--mobile--hidden">
+          <form
+            action="#"
+            class="search navbar__search navbar__search--mobile--hidden"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
             <input type="text" class="search__input" placeholder="Search Location" />
             <button class="search__button" aria-label="Search button">
               <svg class="search__icon">
@@ -35,7 +41,12 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+          <a
+            href="#"
+            class="user navbar__user navbar__user--mobile--hidden"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar" />
             <span class="user__name">Nathan</span>
           </a>
@@ -122,11 +133,21 @@
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
               <div class="stars hotel-wrapper__stars">
-                <svg class="star"><use href="img/icons.svg#star"></use></svg>
-                <svg class="star"><use href="img/icons.svg#star"></use></svg>
-                <svg class="star"><use href="img/icons.svg#star"></use></svg>
-                <svg class="star"><use href="img/icons.svg#star"></use></svg>
-                <svg class="star"><use href="img/icons.svg#star"></use></svg>
+                <svg class="star" data-aos="zoom-in" data-aos-delay="100">
+                  <use href="img/icons.svg#star"></use>
+                </svg>
+                <svg class="star" data-aos="zoom-in" data-aos-delay="150">
+                  <use href="img/icons.svg#star"></use>
+                </svg>
+                <svg class="star" data-aos="zoom-in" data-aos-delay="200">
+                  <use href="img/icons.svg#star"></use>
+                </svg>
+                <svg class="star" data-aos="zoom-in" data-aos-delay="250">
+                  <use href="img/icons.svg#star"></use>
+                </svg>
+                <svg class="star" data-aos="zoom-in" data-aos-delay="300">
+                  <use href="img/icons.svg#star"></use>
+                </svg>
               </div>
               <h1 class="hotel-name hotel-info__name">Grand Hilton Hotel</h1>
               <span class="offer hotel-info__offer">Flash Offer</span>
@@ -266,7 +287,7 @@
       <div class="container">
         <h2 class="packages__title">Other Packages</h2>
         <div class="packages__wrapper">
-          <div class="packages__wrapper-large deaxl">
+          <div class="packages__wrapper-large deaxl" data-aos="fade-right">
             <picture>
               <source type="image/webp" srcset="img/package-1.webp" class="deaxl__image" />
               <source type="image/png" srcset="img/package-1.jpg" class="deaxl__image" />
@@ -320,7 +341,7 @@
           </div>
           <!-- /.packages__wrapper-large deaxl -->
 
-          <div class="packages__wrapper-small deal">
+          <div class="packages__wrapper-small deal" data-aos="fade-right" data-aos-delay="100">
             <picture>
               <source type="image/webp" srcset="img/package-2.webp" class="deal__image" />
               <source type="image/png" srcset="img/package-2.jpg" class="deal__image" />
@@ -360,7 +381,7 @@
             <span class="deal__flash">Flash Offer</span>
           </div>
           <!-- /.packages__wrapper-small deal -->
-          <div class="packages__wrapper-small deal">
+          <div class="packages__wrapper-small deal" data-aos="fade-right" data-aos-delay="100">
             <picture>
               <source type="image/webp" srcset="img/package-3.webp" class="deal__image" />
               <source type="image/png" srcset="img/package-3.jpg" class="deal__image" />
@@ -400,7 +421,7 @@
             <span class="deal__flash">Flash Offer</span>
           </div>
           <!-- /.packages__wrapper-small deal -->
-          <div class="packages__wrapper-small deal">
+          <div class="packages__wrapper-small deal" data-aos="fade-right" data-aos-delay="200">
             <picture>
               <source type="image/webp" srcset="img/package-4.webp" class="deal__image" />
               <source type="image/png" srcset="img/package-4.jpg" class="deal__image" />
@@ -440,7 +461,7 @@
             <span class="deal__flash">Flash Offer</span>
           </div>
           <!-- /.packages__wrapper-small deal -->
-          <div class="packages__wrapper-small deal">
+          <div class="packages__wrapper-small deal" data-aos="fade-right" data-aos-delay="300">
             <picture>
               <source type="image/webp" srcset="img/package-5.webp" class="deal__image" />
               <source type="image/png" srcset="img/package-5.jpg" class="deal__image" />
@@ -495,11 +516,25 @@
         data-ios-fix="true"
       >
         <div class="newsletter-wrapper">
-          <h2 class="newsletter-title newsletter__title">
+          <h2
+            class="newsletter-title newsletter__title"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="200"
+            data-aos-offset="0"
+          >
             subscribe to our
             <span class="newsletter-title__strong">Newsletter</span>
           </h2>
-          <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
+          <form
+            action="send.php"
+            method="POST"
+            class="subscribe newsletter__subscribe form"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
             <input
               type="email"
               class="subscribe__input"
@@ -680,7 +715,12 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+          >
             <picture>
               <source type="image/webp" srcset="img/activity-1.webp" class="card__image" />
               <source type="image/png" srcset="img/activity-1.jpg" class="card__image" />
@@ -694,7 +734,13 @@
             <button class="card__button" aria-label="Book Now button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
             <picture>
               <source type="image/webp" srcset="img/activity-2.webp" class="card__image" />
               <source type="image/png" srcset="img/activity-2.jpg" class="card__image" />
@@ -708,7 +754,13 @@
             <button class="card__button" aria-label="Book Now button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
             <picture>
               <source type="image/webp" srcset="img/activity-3.webp" class="card__image" />
               <source type="image/png" srcset="img/activity-3.jpg" class="card__image" />
@@ -722,7 +774,13 @@
             <button class="card__button" aria-label="Book Now button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
             <picture>
               <source type="image/webp" srcset="img/activity-4.webp" class="card__image" />
               <source type="image/png" srcset="img/activity-4.jpg" class="card__image" />
@@ -984,6 +1042,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
