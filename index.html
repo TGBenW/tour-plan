@@ -958,6 +958,7 @@
                   placeholder="Your Full Name*"
                   name="name"
                   required
+                  minlength="2"
                 />
               </div>
               <!-- /.footer__input-group -->
@@ -1044,8 +1045,11 @@
             required
           />
           <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
-          <button class="button modal__button" aria-label="Send booking form button">Send</button>
-          <span class="modal__required">* Required Fields</span>
+          <div class="modal__send">
+            <button class="button modal__button" aria-label="Send booking form button">Send</button>
+            <span class="modal__required">* Required Fields</span>
+          </div>
+          <!-- /.modal__send -->
         </form>
       </div>
       <!-- /.modal__dialog -->

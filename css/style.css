@@ -76,14 +76,14 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .invalid {
@@ -94,8 +94,9 @@ img {
   color: green;
 }
 
-label .invalid {
-  font-size: 12px;
+label {
+  font-size: 14px;
+  text-decoration: underline;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1277,7 +1278,7 @@ iframe {
   width: 350px;
   height: 55px;
   border-radius: 4px;
-  overflow: hidden;
+  border: none;
 }
 
 .subscribe__input {
@@ -1291,6 +1292,7 @@ iframe {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  border-radius: 4px;
 }
 
 .subscribe__button {
@@ -1300,12 +1302,20 @@ iframe {
   right: 0;
   top: 0;
   border: none;
+  border-radius: 0 4px 4px 0;
   background-color: #EC1F46;
   color: #FFFFFF;
   font-family: "Muli-bold", sans-serif;
   font-size: 12px;
   line-height: 15px;
   cursor: pointer;
+}
+
+.subscribe > label {
+  position: absolute;
+  top: 60px;
+  border: none;
+  font-size: 14px;
 }
 
 .reviews {
@@ -1813,6 +1823,7 @@ iframe {
 }
 
 .modal__send {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1822,6 +1833,8 @@ iframe {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .modal__message {
@@ -2474,23 +2487,38 @@ iframe {
     margin-bottom: 0;
   }
   .modal__dialog {
-    padding: 15px 28px;
+    padding: 12px 28px;
   }
   .modal__title {
     margin: 0;
   }
   .modal__input {
-    height: 30px;
-    margin-top: 8px;
+    height: 26px;
+  }
+  .modal__input:not(:first-child) {
+    margin-top: 10px;
   }
   .modal__message {
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     min-height: 40px;
   }
   .modal__button {
     min-height: 30px;
     padding: 0;
+  }
+}
+
+@media (max-width: 345px) {
+  .modal__button {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .modal__required {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 15px;
   }
 }
 
@@ -2527,16 +2555,6 @@ iframe {
             order: 2;
   }
   .footer__required {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    margin-bottom: 15px;
-  }
-  .modal__button {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .modal__required {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     margin-bottom: 15px;
