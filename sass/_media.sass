@@ -31,7 +31,9 @@
   .booking__num,
   .navbar-menu__link,
   .user__name,
-  .footer__link
+  .footer__link,
+  .footer__email,
+  .footer__tel
     &:hover
       text-decoration: underline
   .search__button,
@@ -86,10 +88,12 @@
   .map
     width: 340px
   .reviews
+    padding-bottom: 30px
     &-slider
       &__item
         max-width: 580px
   .activities
+    padding-bottom: 50px
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -117,10 +121,12 @@
     padding-top: 73px
     padding-bottom: 33px
     &-wrapper
-      grid-template-columns: repeat(6, 1fr)
+      grid-template-columns: 1fr 50px 1fr 160px repeat(2, 1fr)
       grid-row-gap: 40px
       margin-bottom: 56px
     &__logo
+      width: 104px
+      height: 120px
       grid-row: 1 / 2
       grid-column: span 2
     &__social
@@ -132,16 +138,19 @@
       grid-row: 2 / 3
       grid-column: span 2
     &__legal
+      margin-left: 0
       grid-column: span 2
     &__additional
       grid-column: span 2
     &__contact
       &-details
+        padding-top: 20px
         grid-column: span 5
         grid-row: 3
       &-form
         grid-column: span 5
         grid-row: 4
+        padding-right: 40px
     &__input
       &-group
         flex-basis: 48%
@@ -152,7 +161,7 @@
   .modal
     &__dialog
       padding: 23px 58px
-@media (max-width: 768px)
+@media (max-width: 767px)
   .container
     max-width: 576px
     width: 92%
@@ -255,7 +264,7 @@
       flex-direction: column
       align-items: start
   .reviews
-    padding-bottom: 60px
+    padding-bottom: 100px
     &__title
       font-size: 30px
       line-height: 38px
@@ -398,13 +407,13 @@
       &--mb-2
         font-size: 12px
     &__additional
-      grid-row: 3
-      grid-column: 1
-    &__categories
       grid-row: 4
       grid-column: 1
-    &__legal
+    &__categories
       grid-row: 5
+      grid-column: 1
+    &__legal
+      grid-row: 3
       grid-column: 1px
     &__contact
       &-details
@@ -475,6 +484,10 @@
 @media (max-width: 320px)
   .container
     max-width: 280px
+  .logo
+    &__header
+      width: 100px
+      height: 14px
   .navbar
     &-top
       padding: 28px 0
@@ -512,6 +525,7 @@
       max-width: 245px
       margin: 0 auto 42px auto
   .activities
+    padding-top: 50px
     padding-bottom: 40px
     &__title
       margin-top: 0
@@ -520,11 +534,24 @@
     &__card
       margin-bottom: 20px
   .footer
-    padding-top: 30px
+    padding-top: 70px
     &__legal
       margin-left: 0
     &-wrapper
-      grid-row-gap: 15px
+      grid-row-gap: 30px
+    &__contact
+      &-details
+        padding-top: 0
+      &-form
+        padding-top: 25px
+    &__icon
+      &-wrapper
+        min-width: 30px
+    &__phones,
+    &__adr,
+    &__text,
+    &__email
+      font-size: 14px
     &__message
       margin-bottom: 15px
     &__button
