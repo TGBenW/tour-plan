@@ -10,6 +10,9 @@
     margin: 0
     margin-bottom: 70px
   &-slider
+    &__text
+      overflow: auto
+      max-height: 115px
     &__item
       position: relative
       display: flex
@@ -55,10 +58,12 @@
       z-index: 99
       &--prev
         background-image: url(../img/arrow-prev-secondary.svg)
-        left: 0
+        top: 149px
+        left: 15px
       &--next
         background-image: url(../img/arrow-next-secondary.svg)
-        right: 0
+        top: 149px
+        right: 15px
     &__profile
       display: flex
       flex-direction: column

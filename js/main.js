@@ -11,6 +11,7 @@ $(document).ready(function () {
     keyboard: {
       enabled: true,
     },
+    autoHeight: true,
   });
 
   const reviewsSlider = new Swiper(".reviews-slider", {
@@ -25,6 +26,7 @@ $(document).ready(function () {
     keyboard: {
       enabled: true,
     },
+    autoHeight: true,
   });
 
   var menuButton = $(".menu-button");
