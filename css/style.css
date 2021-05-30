@@ -494,6 +494,7 @@ iframe { width: 100%; height: 100%; }
   .hotel-slider__image { width: 100%; height: 100%; object-fit: cover; }
   .card { width: 230px; height: 250px; }
   .deaxl-right { padding-top: 20px; }
+  .deaxl__description { max-height: 180px; }
   .deal-bottom { width: 300px; padding-top: 15px; }
   .footer-wrapper { margin-bottom: 70px; grid-template-columns: minmax(min-content, 0.8fr) minmax(min-content, 0.8fr) minmax(min-content, 1fr) minmax(min-content, 1fr); }
   .footer__input-group { flex-basis: 100%; }
@@ -535,7 +536,7 @@ iframe { width: 100%; height: 100%; }
   .packages__title { margin-bottom: 55px; font-size: 30px; line-height: 36px; }
   .packages__wrapper { grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(3, 1fr); }
   .deaxl-right { padding-top: 45px; }
-  .deal-bottom { padding-top: 20px; }
+  .deal-bottom { padding-top: 20px; padding-right: 0; }
   .footer { padding-top: 68px; padding-bottom: 33px; }
   .footer-wrapper { grid-template-columns: 1fr 50px 1fr 160px repeat(2, 1fr); grid-row-gap: 40px; margin-bottom: 56px; }
   .footer__logo { width: 95px; height: 120px; grid-row: 1 / 2; grid-column: span 2; }
@@ -597,7 +598,7 @@ iframe { width: 100%; height: 100%; }
   .deaxl__image { width: 100%; height: 250px; }
   .deaxl-right { width: 100%; height: auto; padding-left: 20px; }
   .deal__image { width: 100%; height: 250px; }
-  .deal-bottom { width: 100%; }
+  .deal-bottom { width: 100%; padding-right: 20px; }
   .deal__flash { padding: 8px 12px; font-size: 12px; line-height: 15px; }
   .footer-wrapper { grid-template-columns: 1fr 50px 1fr 150px repeat(2, 1fr); }
   .footer__contact-details { grid-column: span 6; }
