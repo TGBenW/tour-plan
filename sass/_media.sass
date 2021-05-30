@@ -83,6 +83,7 @@
       margin-bottom: 20px
     &-right
       flex-direction: row
+      padding-top: 10px
     &-slider
       width: 100%
   .booking
@@ -93,7 +94,7 @@
   .map
     width: 340px
   .reviews
-    padding-bottom: 30px
+    padding-bottom: 75px
     &__title
       font-size: 30px
       line-height: 38px
@@ -103,6 +104,13 @@
         max-height: 135px
       &__item
         max-width: 580px
+      &__button
+        &--next
+          right: 0
+          top: 175px
+        &--prev
+          left: 0
+          top: 175px
   .activities
     padding-bottom: 50px
     &-wrapper
@@ -131,7 +139,7 @@
     &-bottom
       padding-top: 20px
   .footer
-    padding-top: 73px
+    padding-top: 68px
     padding-bottom: 33px
     &-wrapper
       grid-template-columns: 1fr 50px 1fr 160px repeat(2, 1fr)
@@ -155,6 +163,10 @@
       grid-column: span 2
     &__additional
       grid-column: span 2
+    &__title
+      &--mb-3
+        &--mb-4
+          margin-bottom: 30px
     &__contact
       &-details
         padding-top: 20px
@@ -278,7 +290,7 @@
       flex-direction: column
       align-items: start
   .reviews
-    padding-bottom: 100px
+    padding-bottom: 30px
     &__title
       font-size: 30px
       line-height: 38px
@@ -302,7 +314,7 @@
           transform: translate(50%, 0)
           margin-right: -90px
   .activities
-    padding-top: 40px
+    padding-top: 20px
     padding-bottom: 60px
     &__title
       margin-bottom: 36px
@@ -521,6 +533,7 @@
       &__text
         padding-bottom: 20px
     &-right
+      padding-top: 0
       min-height: 402px
     &-slider
       max-height: 179px
