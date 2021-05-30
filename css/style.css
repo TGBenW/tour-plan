@@ -668,6 +668,7 @@ iframe { width: 100%; height: 100%; }
   .hotel-slider__button--prev { left: 10px; }
   .hotel-slider__button--next { right: 10px; }
   .map { max-height: 173px; }
+  .deaxl__description { max-height: 210px; }
   .newsletter { height: 320px; }
   .newsletter-parallax { padding-top: 70px; }
   .newsletter-title { font-size: 20px; line-height: 25px; }
