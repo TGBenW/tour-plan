@@ -271,9 +271,9 @@ iframe { width: 100%; height: 100%; }
 
 .packages { padding: 40px 0 70px 0; }
 
-.packages__title { margin: 0 0 65px 0; font-family: "Muli-bold", sans-serif; font-style: normal; font-size: 36px; line-height: 45px; text-align: center; text-transform: uppercase; }
+.packages__title { margin: 2px 0 67px 0; font-family: "Muli-bold", sans-serif; font-style: normal; font-size: 36px; line-height: 45px; text-align: center; text-transform: uppercase; }
 
-.packages__wrapper { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); grid-gap: 30px; }
+.packages__wrapper { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); grid-column-gap: 30px; grid-row-gap: 27px; }
 
 .packages__wrapper-large { grid-column-start: span 2; }
 
@@ -383,7 +383,7 @@ iframe { width: 100%; height: 100%; }
 
 .reviews-slider__text { max-width: 537px; font-size: 12px; line-height: 160%; text-align: justify; margin: auto; }
 
-.activities { padding: 25px 0 98px 0; }
+.activities { padding: 35px 0 98px 0; }
 
 .activities__title { font-family: "Muli-bold", sans-serif; font-size: 24px; line-height: 30px; text-transform: uppercase; margin-bottom: 57px; }
 
@@ -403,7 +403,7 @@ iframe { width: 100%; height: 100%; }
 
 .footer-wrapper { display: grid; grid-template-columns: repeat(4, minmax(min-content, 1fr)); grid-gap: 20px; grid-auto-rows: minmax(40px, min-content); align-items: start; margin-bottom: 95px; }
 
-.footer__logo { width: 175px; height: 175px; grid-row: 1 / 3; align-self: center; }
+.footer__logo { grid-row: 1 / 3; width: 166px; padding-top: 30px; }
 
 .footer__image { width: 100%; height: 100%; }
 
@@ -419,7 +419,7 @@ iframe { width: 100%; height: 100%; }
 
 .footer__contact-details { grid-column: span 2; }
 
-.footer__contact-form { grid-column: span 2; }
+.footer__contact-form { grid-column: span 2; padding-left: 6px; }
 
 .footer__text { font-style: normal; font-size: 14px; line-height: 160%; color: #BDBDBD; margin-bottom: 22px; }
 
@@ -435,9 +435,9 @@ iframe { width: 100%; height: 100%; }
 
 .footer__legal { margin-left: 60px; }
 
-.footer__item { display: flex; align-items: flex-start; color: #BDBDBD; font-style: normal; font-size: 14px; line-height: 160%; }
+.footer__item { display: flex; align-items: flex-start; color: #BDBDBD; font-style: normal; font-size: 14px; line-height: 130%; }
 
-.footer__item--mb-2:not(:last-child) { margin-bottom: 20px; }
+.footer__item--mb-2:not(:last-child) { margin-bottom: 5px; }
 
 .footer__item--small { font-family: 'Muli-regular', sans-serif; font-style: normal; font-size: 12px; line-height: 15px; }
 
@@ -452,6 +452,8 @@ iframe { width: 100%; height: 100%; }
 .footer__input { width: 100%; }
 
 .footer__input-group { margin-bottom: 15px; flex-basis: 48%; }
+
+.footer__form { padding-top: 15px; }
 
 .footer__message { min-height: 123px; flex-basis: 100%; margin-bottom: 23px; }
 
