@@ -547,6 +547,30 @@
     &__button
       min-height: 30px
       padding: 0
+@media (max-height: 510px) //aaa
+  .navbar
+    &-bottom
+      top: 70px
+      padding-top: 0
+    &-menu
+      padding-top: 10px
+      &__item
+        margin-bottom: 2px
+        &--first
+          margin-top: 5px
+    &__user
+      flex-direction: row
+      align-items: center
+    &__search
+      min-width: 245px
+  .search
+    margin-top: 9px
+  .user
+    &__name
+      &--light
+        margin-left: 10px
+        margin-top: 0
+        margin-bottom: 0
 @media (max-width: 345px)
   .modal
     &__button
@@ -568,7 +592,7 @@
       width: 100px
       height: 14px
     &-top
-      padding: 20px 0
+      padding: 30px 0
   .breadcrumb
     &-list
       padding-top: 12px
